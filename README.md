@@ -1,6 +1,6 @@
-# This project was bootstrapped with Create React app
+# Titan Client Viewer
 
-This uses AWS Amplify - primarily for the security / authentication components.
+This uses AWS Amplify - primarily for the security / authentication components. The original project was bootstrapped with Create React app.
 
 Items:
 
