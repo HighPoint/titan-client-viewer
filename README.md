@@ -2,9 +2,8 @@
 
 This uses AWS Amplify - primarily for the security / authentication components. The original project was bootstrapped with Create React app.
 
-Items:
 
-## Authentication:
+## Authentication
 
 * This uses Cognito. Cognito handles all the authentication with Lambda and S3 Storage. This allows the basic HIPAA security requirements to be met. (i.e. encryption in transit and encryption at rest.)
 
@@ -46,7 +45,7 @@ OpenSearch records need to be modified to include the 'client_name', 'document_s
 
 By default, OpenSearch returns 10 items. A 'next 10' button (and 'previous 10') needs to be added.
 
-## PDF viewer zoom.
+## PDF Viewer Zoom
 
 AWS uses this repo for the PDF Viewer in document-understanding example:
 
@@ -76,7 +75,7 @@ Example Annotation in TypeScript (no zoom):
 
 https://github.com/agentcooper/react-pdf-highlighter
 
-## Understanding PDF layers:
+## Understanding PDF layers
 
 Here is my understand of the PDF layers from the code:
 
@@ -100,9 +99,9 @@ Drawing on the canvas layer will likely either require a reloading of the doc or
 
 Fix it all. Amplify has color themes, which can be set or customize each component individually.
 
-## Fix React code.
+## React code
 
-React code is set up 'quick and dirty'. It needs to be cleaned up.
+React code is set up 'quick and dirty'. Fix it. It needs to be cleaned up.
 
 ## Next.js
 
