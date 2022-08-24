@@ -1,0 +1,13 @@
+{
+  "resourceName": "pdfS3",
+  "policyUUID": "68d14a0b",
+  "bucketName": "amp-west2",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "groupAccess": {}
+}

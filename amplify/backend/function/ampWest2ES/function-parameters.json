@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "auth": {
+      "ampwest212781286": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "storage": {
+      "pdfS3": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ampwest2-dev-132034-authRole",
+      "UnauthRoleArn": "arn:aws:iam::611080430215:role/amplify-ampwest2-dev-132034-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::611080430215:role/amplify-ampwest2-dev-132034-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-ampwest2-dev-132034-deployment",
+      "UnauthRoleName": "amplify-ampwest2-dev-132034-unauthRole",
+      "StackName": "amplify-ampwest2-dev-132034",
+      "StackId": "arn:aws:cloudformation:us-west-2:611080430215:stack/amplify-ampwest2-dev-132034/3d8384a0-1fe3-11ed-9621-0a401152dae7",
+      "AmplifyAppId": "d1irfjpkdgnoyt",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-ampwest2-dev-132034-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "ampwest212781286": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1irfjpkdgnoyt",
+          "type": "manual"
+        }
+      },
+      "function": {
+        "ampWest2ES": {
+          "deploymentBucketName": "amplify-ampwest2-dev-132034-deployment",
+          "s3Key": "amplify-builds/ampWest2ES-59477252493069436439-build.zip"
+        }
+      }
+    }
+  }
+}
