@@ -11,6 +11,8 @@ This uses AWS Amplify - primarily for the security / authentication components. 
 
 Individuals must be added to Cognito. They cannot sign up direct because of security.
 
+https://us-east-1.console.aws.amazon.com/cognito/v2/idp/user-pools/us-east-1_6GEaxsYlE/users/create?region=us-east-1
+
 Each individual must be part of a Cognito Group, which is the client_name (or stylized name). This Cognito Group name is passed via lambda to both OpenSearch and S3 bucket to allow only members of client to see client files. i.e Client1 sees Client1 OpenSearch results and Client1 S3 documents. Client2 sees Client2 OpenSearch results and Client2 S3 documents.
 
 ## Amplify
