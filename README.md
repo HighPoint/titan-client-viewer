@@ -28,16 +28,16 @@ OpenSearch is accessed via a Lambda function. Right now it is spoofed (placehold
 
 The lambda passes:
 
-Client Name - 'client_name'
-Search Request - 'search_request'
-Page Number - 'page_number'
+* Client Name - 'client_name'
+* Search Request - 'search_request'
+* Page Number - 'page_number'
 
 The lambda function needs to return:
 
-S3 document Name - created from email client_name and date.
-Document screen Name - ML (likely patient name + first line of PDF)
-Entry Date - created from email date.
-Procedure Date - ML
+* S3 document Name - created from email client_name and date.
+* Document screen Name - ML (likely patient name + first line of PDF)
+* Entry Date - created from email date.
+* Procedure Date - ML
 
 The Lambda function needs Environmental variables and Lambda Layer to communicate with OpenSearch.
 
