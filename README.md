@@ -4,7 +4,7 @@ This uses AWS Amplify - primarily for the security / authentication components. 
 
 Items:
 
-Authentication:
+## Authentication:
 
 * This uses Cognito. Cognito handles all the authentication with Lambda and S3 Storage. This allows the basic HIPAA security requirements to be met. (i.e. encryption in transit and encryption at rest.)
 
@@ -23,7 +23,7 @@ Amplify UI:
 
 https://ui.docs.amplify.aws/react/components
 
-* OpenSearch / Elastic
+## OpenSearch / Elastic
 
 OpenSearch is accessed via a Lambda function. Right now it is spoofed (placeholder function).
 
@@ -46,7 +46,9 @@ OpenSearch records need to be modified to include the 'client_name', 'document_s
 
 By default, OpenSearch returns 10 items. A 'next 10' button (and 'previous 10') needs to be added.
 
-* PDF viewer zoom. AWS uses this repo for the PDF Viewer in document-understanding example:
+## PDF viewer zoom.
+
+AWS uses this repo for the PDF Viewer in document-understanding example:
 
 https://github.com/wojtekmaj/react-pdf
 
@@ -62,12 +64,11 @@ npm install @intelllex/react-pdf
 
 This repo, however, has not been tested in Amplify.
 
+## Annotations
 
-* Annotations
+* Needs ML output to create annotation JSON. The annotation needs bounding boxes (bbox). The ML output (that I saw) has refs to the Textract blocks, so this needs to be tied together (server-side).
 
-a) Needs ML output to create annotation JSON. The annotation needs bounding boxes (bbox). The ML output (that I saw) has refs to the Textract blocks, so this needs to be tied together (server-side).
-
-b) https://github.com/wojtekmaj/react-pdf repo has the css for the pdf.js annotation layer.
+* https://github.com/wojtekmaj/react-pdf repo has the css for the pdf.js annotation layer.
 
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 
@@ -75,7 +76,7 @@ Example Annotation in TypeScript (no zoom):
 
 https://github.com/agentcooper/react-pdf-highlighter
 
-* Understanding PDF layers:
+## Understanding PDF layers:
 
 Here is my understand of the PDF layers from the code:
 
@@ -95,10 +96,16 @@ Annotation Layer is where the Annotations are. This layer can be used for annota
 
 Drawing on the canvas layer will likely either require a reloading of the doc or increased memory so that you can 'remove' any highlights.
 
-* CSS - Fix it all. Amplify has color themes, which can be set or customize each component individually.
+## CSS
 
-* Fix React code. React code is set up 'quick and dirty'. It needs to be cleaned up.
+Fix it all. Amplify has color themes, which can be set or customize each component individually.
 
-* Next.js - this can be converted to Next.js, but my goal was to get this working in React first. Amplify supports React. My first attempt to use Next.js was unsuccessful, but AWS has added documentation in the last two weeks.
+## Fix React code.
+
+React code is set up 'quick and dirty'. It needs to be cleaned up.
+
+## Next.js
+
+This can be converted to Next.js, but my goal was to get this working in React first. Amplify supports React. My first attempt to use Next.js was unsuccessful, but AWS has added documentation in the last two weeks.
 
 https://docs.amplify.aws/start/q/integration/next/
