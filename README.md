@@ -9,6 +9,12 @@ This uses AWS Amplify - primarily for the security / authentication components. 
 
 * Using Cognito and Amplify means JWT Tokens are not needed for HIPAA requirements. However, Amplify has it's own language. Here is the cheat sheet:
 
+Individuals must be added to Cognito. They cannot sign up direct because of security.
+
+Each individual must be part of a Cognito Group, which is the client_name (or stylized name). This Cognito Group name is passed via lambda to both OpenSearch and S3 bucket to allow only members of client to see client files. i.e Client1 sees Client1 OpenSearch results and Client1 S3 documents. Client2 sees Client2 OpenSearch results and Client2 S3 documents.
+
+## Amplify
+
 Amplify API:
 
 https://aws-amplify.github.io/amplify-js/api/
